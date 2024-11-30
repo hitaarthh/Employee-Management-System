@@ -1,0 +1,28 @@
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+.client-section {
+    padding: 15px; /* Reduced from 30px */
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* Add this new class */
+section.vh-100 {
+    padding-top: 20px; /* Add some padding instead of taking full viewport height */
+    min-height: auto; /* Remove the forced 100vh height */
+}

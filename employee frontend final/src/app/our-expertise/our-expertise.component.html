@@ -1,0 +1,19 @@
+<div class="about-section">
+    <h1>Our Legal Team</h1>
+  </div>
+<div class="expertise-section">
+    <div class="row">
+        <p class="intro">With a proven track record and unmatched expertise, we lead in the areas that matter most to our clients.</p>
+
+      <!-- Expertise Areas -->
+      <div class="column" *ngFor="let service of expertiseServices">
+        <div class="card">
+            <i [class]="service.iconClass" class="icon"></i>
+              <div class="container">
+                                  <h2>{{ service.title }}</h2>
+                <p>{{ service.description }}</p>
+              </div>
+            </div>
+      </div>
+    </div>
+</div>
